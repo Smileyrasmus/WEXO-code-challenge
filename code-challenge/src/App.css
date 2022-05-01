@@ -1,5 +1,15 @@
+/* React defualt css, which most of is not used (I only use .App)*/
 .App {
-  text-align: center;
+  background-color: var(--main60-color);
+  /* Make to grid */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: var(--header-height) calc(100vh - var(--header-height)) auto;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  /* Make to grid */
 }
 
 .App-logo {
@@ -36,3 +46,66 @@
     transform: rotate(360deg);
   }
 }
+/* React defualt css */
+
+/* variables */
+:root {
+  --header-height: 70px;
+  --main60-color: rgb(231, 231, 231);
+  --main30-color: rgb(138, 138, 138);
+  --main10-color: rgb(255, 139, 139);
+}
+/* variables */
+
+/* Remove link decoration */
+a.navLink {
+  text-decoration: none;
+}
+
+a.navLink:visited {
+  color: inherit;
+}
+/* Remove link decoration */
+
+/* Header */
+header {
+  background-color: var(--main30-color);
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.navigation {
+  width: min-content;
+  padding: 3px;
+  display: flex;
+  gap: 10px;
+}
+
+.dropdownMenu {
+  padding: 3px;
+  display: grid;
+  background-color: var(--main10-color);
+  position: relative;
+  z-index: 1;
+}
+
+.navLink {
+  height: min-content;
+  padding: 3px;
+}
+
+.navLink:hover {
+  background-color: var(--main10-color);
+}
+
+/* Class to make things not selectable */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+/* Header */
