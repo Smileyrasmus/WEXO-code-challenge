@@ -67,6 +67,11 @@ a.navLink:visited {
 }
 /* Remove link decoration */
 
+.navLink.active {
+  font-weight: bold;
+  background-color: var(--main10-color);
+}
+
 /* Header */
 header {
   background-color: var(--main30-color);

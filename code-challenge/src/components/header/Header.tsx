@@ -14,6 +14,7 @@ export default function Header() {
             <div className="navigation">
                 <NavLink className="navLink noselect" to="/">Home</NavLink>
                 <NavCategory />
+                <NavLink className="navLink noselect" to="/wishlist">Wishlist</NavLink>
             </div>
         </header>
     )
