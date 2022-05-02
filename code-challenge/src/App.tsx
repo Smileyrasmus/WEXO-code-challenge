@@ -10,13 +10,13 @@ function App() {
     genres: [
       "action",
       "comedy",
-      "Thriller",
-      "War",
-      "Romance",
-      "Drama",
-      "Crime",
-      "Documentary",
-      "Horror"
+      "thriller",
+      "war",
+      "romance",
+      "drama",
+      "crime",
+      "documentary",
+      "horror"
     ]
   }
   
