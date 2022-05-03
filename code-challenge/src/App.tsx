@@ -29,6 +29,8 @@ function App() {
           <Header />
           <Routes>
             <Route path='/' element={<Overview />} />
+            <Route path='/categories/:genreName' element={"a category"}/>
+            <Route path='/wishlist' element={"wishlist"}/>
           </Routes>
         </Router>
       </div>
