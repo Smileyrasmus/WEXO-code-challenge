@@ -117,3 +117,9 @@ header {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 /* Header */
+
+/* Main */
+.main {
+  overflow-y: auto;
+}
+/* Main */

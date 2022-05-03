@@ -19,7 +19,7 @@ function App() {
       "horror"
     ]
   }
-  
+
   const [globalData, setGlobalData] = useState<IGlobalData>(defaultGlobalData)
 
   return (
@@ -27,11 +27,13 @@ function App() {
       <div className="App">
         <Router>
           <Header />
-          <Routes>
-            <Route path='/' element={<Overview />} />
-            <Route path='/categories/:genreName' element={"a category"}/>
-            <Route path='/wishlist' element={"wishlist"}/>
-          </Routes>
+          <div className="main">
+            <Routes>
+              <Route path='/' element={<Overview />} />
+              <Route path='/categories/:genreName' element={"a category"} />
+              <Route path='/wishlist' element={"wishlist"} />
+            </Routes>
+          </div>
         </Router>
       </div>
     </GlobalContext.Provider>
