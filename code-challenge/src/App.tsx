@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Overview from './components/overview/Overveiw';
-import { GlobalContext, IGlobalData } from './context/GlobalData';
+import { GlobalContext, IGlobalData } from './contexts/GlobalData';
 
 function App() {
   const defaultGlobalData = {

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { useLocation } from "react-router-dom"
-import { useGlobalContext } from "../../context/GlobalData"
+import { useGlobalContext } from "../../contexts/GlobalData"
 
 /**
  * A navigation component, with a dropdown menu with links to all categories
