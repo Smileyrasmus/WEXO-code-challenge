@@ -14,7 +14,7 @@ class FetchBBMiddleware {
     }
 
     async getByGenre(genre: string): Promise<Movie[]> {
-        const url = this.baseUrl + "?form=json&lang=da&byTags=genre:action&range=1-20" 
+        const url = this.baseUrl + `?form=json&lang=da&byTags=genre:${genre}&range=1-20` 
         const rawData = await this.fetchData(url)
         const movies: Movie[] = []
         for(const rawMovieData of rawData.entries) {
