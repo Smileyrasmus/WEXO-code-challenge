@@ -122,4 +122,40 @@ header {
 .main {
   overflow-y: auto;
 }
+
+.genre {
+  border: solid var(--main30-color);
+  padding-inline: 10px;
+}
+
+h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.movieXScroll {
+  --columnWidth: 300px;
+  display: grid;
+  grid-auto-columns: var(--columnWidth);
+  grid-auto-flow: column;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.movieXScroll > div {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--main30-color);
+  box-shadow: 5px 5px 5px var(--main10-color);
+  scroll-snap-align: start;
+}
+
+.movieXScroll > div:hover {
+  border: solid var(--main10-color);
+}
+
+.movieXScroll > div > img {
+  width: 100%;
+}
 /* Main */

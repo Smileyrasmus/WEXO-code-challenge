@@ -5,8 +5,8 @@ export default class Movie {
     programYear: number
     programPubDate: Date
     programType: "movie" | "series"
-    poster: string | null | undefined
-    horThumpnail: string | null | undefined
+    poster: string | undefined
+    horThumpnail: string | undefined
 
     constructor(rawDataEntry: any) {
         this.id = rawDataEntry.id

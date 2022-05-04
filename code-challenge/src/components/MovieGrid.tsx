@@ -5,6 +5,7 @@ import FetchBBMiddleware from "../logic/FetchBBMiddleware";
 
 type MovieGridProps = {
     genre: string
+    gridType: "movieGrid" | "movieXScroll"
 }
 
 export default function MovieGrid(props: MovieGridProps) {
@@ -18,7 +19,7 @@ export default function MovieGrid(props: MovieGridProps) {
     }, [])
 
     return(
-        <div>
+        <div className={props.gridType}>
             {movies.map(movie => {
                 return(
                     <MovieComponent key={movie.id} movie={movie}/>

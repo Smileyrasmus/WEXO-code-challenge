@@ -6,9 +6,9 @@ interface Genre {
 
 export default function Genre(props: Genre) {
     return(
-        <div>
+        <div className="genre">
             <h1>{props.genreName}</h1>
-            <MovieGrid genre={props.genreName}/>
+            <MovieGrid genre={props.genreName} gridType={"movieXScroll"}/>
         </div>
     )
 }
