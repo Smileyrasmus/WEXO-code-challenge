@@ -1,18 +1,18 @@
 # Functionality 
 - [ ] A frontpage showcasing the following genres (both for movies and series if available). 
-  - [ ] Action
-  - [ ] Comedy
-  - [ ] Thriller
-  - [ ] War
-  - [ ] Romance
-  - [ ] Drama
-  - [ ] Crime
-  - [ ] Documentary
-  - [ ] Horror
+  - [x] Action
+  - [x] Comedy
+  - [x] Thriller
+  - [x] War
+  - [x] Romance
+  - [x] Drama
+  - [x] Crime
+  - [x] Documentary
+  - [x] Horror
   - [ ] Each genre should include the genre title and the total count of movies
-  - [ ] Only showcase a few movies from the genre.
-    - [ ] The movies should be presented with title and cover of the movie.
-    - [ ] The user should be able to click on the movie and be redirected to a page showing all information about it.
+  - [x] Only showcase a few movies from the genre.
+    - [x] The movies should be presented with title and cover of the movie.
+    - [x] The user should be able to click on the movie and be redirected to a page showing all information about it.
     - [ ] **Optional:** A load more button which requests the next row of movies from the feed
   - [ ] A button next to the title which links the user to a complete list of all the movies.
 
@@ -28,11 +28,11 @@
 
 - [ ] A page presenting all information available about a movie.
     - [ ] The following data needs to be visible on the page:
-        - [ ] Title
-        - [ ] Description
-        - [ ] Release year
-        - [ ] Cover
-        - [ ] Backdrop (Background-image for creating the proper atmosphere)
+        - [x] Title
+        - [x] Description
+        - [x] Release year
+        - [x] Cover
+        - [x] Backdrop (Background-image for creating the proper atmosphere)
         - [ ] Genre
         - [ ] Actors and Directors
         - [ ] **Optional**: A embedded video player for playing the Youtube trailer attached to the movie

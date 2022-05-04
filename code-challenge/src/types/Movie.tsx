@@ -2,6 +2,7 @@ export default class Movie {
     id: string
     title: string
     description: string
+    genres: string[]
     programYear: number
     programPubDate: Date
     programType: "movie" | "series"
@@ -9,8 +10,15 @@ export default class Movie {
     horThumpnail: string | undefined
 
     constructor(rawDataEntry: any) {
-        this.id = rawDataEntry.id
+        let idArray = rawDataEntry.id.split("/") // the raw id is a http link. The actual id seems to be the last path in the link
+        this.id = idArray[idArray.length - 1] // get the id from the splitted link
         this.title = rawDataEntry.title
+
+        this.genres = []
+        for(const tag of rawDataEntry.plprogram$tags) {
+            if(tag.plprogram$scheme === "genre") this.genres.push(tag.plprogram$title)
+        }
+
         this.description = rawDataEntry.description
         this.programYear = rawDataEntry.plprogram$year
         this.programPubDate = new Date(rawDataEntry.plprogram$pubDate)

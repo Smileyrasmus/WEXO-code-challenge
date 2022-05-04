@@ -23,6 +23,12 @@ class FetchBBMiddleware {
         return movies
     }
 
+    async getMovieById(id: string | undefined): Promise<Movie> {
+        const url = this.baseUrl + `/${id}?form=json`
+        const rawData = await this.fetchData(url)
+        return new Movie(rawData)
+    }
+
 }
 
 export default new FetchBBMiddleware()

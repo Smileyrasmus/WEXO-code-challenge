@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Overview from './components/overview/Overveiw';
 import { GlobalContext, IGlobalData } from './contexts/GlobalData';
+import MovieDetail from './components/MovieDetail';
 
 function App() {
   const defaultGlobalData = {
@@ -31,6 +32,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Overview />} />
               <Route path='/categories/:genreName' element={"a category"} />
+              <Route path='/movies/:id' element={<MovieDetail/>} />
               <Route path='/wishlist' element={"wishlist"} />
             </Routes>
           </div>
