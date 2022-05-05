@@ -33,7 +33,7 @@
         - [x] Release year
         - [x] Cover
         - [x] Backdrop (Background-image for creating the proper atmosphere)
-        - [ ] Genre
+        - [x] Genre
         - [ ] Actors and Directors
         - [ ] **Optional**: A embedded video player for playing the Youtube trailer attached to the movie
     - [ ] The user should be allowed to add and delete movies from his wishlist.
