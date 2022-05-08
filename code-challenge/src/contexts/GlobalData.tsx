@@ -1,12 +1,13 @@
 import { createContext, useContext } from "react"
-
+import Wishlist from "../localstorage/Wishlist"
 // Reference: https://dev.to/madv/usecontext-with-typescript-23ln
 
 /**
  * Type which descripes the structure of the global data
  */
 export type IGlobalData = {
-    genres: string[]
+    genres: string[],
+    wishlist: Wishlist
 }
 
 /**
@@ -22,7 +23,8 @@ export type IGlobalContext = {
  */
 export const GlobalContext = createContext<IGlobalContext>({
     copy: { // defualt value of global context
-        genres: []
+        genres: [],
+        wishlist: new Wishlist()
     },
     setCopy: () => { }
 })

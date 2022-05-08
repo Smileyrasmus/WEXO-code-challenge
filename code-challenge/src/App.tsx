@@ -1,13 +1,14 @@
-import { createContext, useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Overview from './components/overview/Overveiw';
 import { GlobalContext, IGlobalData } from './contexts/GlobalData';
 import MovieDetail from './components/MovieDetail';
+import Wishlist from './localstorage/Wishlist';
 
 function App() {
-  const defaultGlobalData = {
+  const defaultGlobalData:IGlobalData = {
     genres: [
       "action",
       "comedy",
@@ -18,7 +19,8 @@ function App() {
       "crime",
       "documentary",
       "horror"
-    ]
+    ],
+    wishlist: new Wishlist()
   }
 
   const [globalData, setGlobalData] = useState<IGlobalData>(defaultGlobalData)

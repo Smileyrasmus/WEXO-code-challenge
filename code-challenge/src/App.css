@@ -49,6 +49,10 @@
 /* React defualt css */
 
 /* variables */
+/*--------------------------------------------------  
+    EASY ACCESS TO EDIT COLOR THEME OF WEBSITE!!!
+      (text color not easily changeable yet)
+--------------------------------------------------*/
 :root {
   --header-height: 70px;
   --main60-color: rgb(231, 231, 231);
@@ -134,6 +138,7 @@ h1 {
 
 .movieXScroll {
   --columnWidth: 300px;
+  position: relative;
   display: grid;
   grid-auto-columns: var(--columnWidth);
   grid-auto-flow: column;
@@ -142,7 +147,7 @@ h1 {
   scroll-snap-type: x mandatory;
 }
 
-.movieXScroll > a {
+.movieXScroll .movieComponent {
   margin: 10px;
   padding: 10px;
   background-color: var(--main30-color);
@@ -150,11 +155,11 @@ h1 {
   scroll-snap-align: start;
 }
 
-.movieXScroll > a:hover {
+.movieXScroll .movieComponent:hover {
   border: solid var(--main10-color);
 }
 
-.movieXScroll > a > img {
+.movieXScroll .movieComponent img {
   width: 100%;
 }
 /* Main */
@@ -173,3 +178,28 @@ h1 {
   width: 240px
 }
 /* MovieDetail */
+
+/* Bookmark */
+.bookmark {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.bookmark g > g{
+  display: none;
+}
+
+.bookmark g > g > path{
+  fill: var(--main10-color) !important
+}
+
+.bookmark.isBookmarked g > g{
+  display: block;
+}
+
+.movieComponent:hover .bookmark #border{
+  display: block;
+}
+/* Bookmark */
